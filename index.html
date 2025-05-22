@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Reina | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in;
+    }
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #00ffd9;
+      text-shadow: 0 0 8px #00ffd9, 0 0 16px #ff00aa;
+      animation: glowHeader 1.5s ease-in-out infinite alternate;
+    }
+    @keyframes glowHeader {
+      from { text-shadow: 0 0 8px #00ffd9; }
+      to { text-shadow: 0 0 16px #ff00aa; }
+    }
+    nav {
+      background: #141414;
+      padding: 1rem;
+      text-align: center;
+      animation: slideInNav 1s ease-out;
+    }
+    @keyframes slideInNav {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ffd9;
+      text-shadow: 0 0 10px #00ffd9;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInSection 1s ease-in-out;
+    }
+    @keyframes fadeInSection {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .portfolio-project {
+      margin-bottom: 3rem;
+    }
+    .portfolio-project h2 {
+      color: #ff00aa;
+      border-bottom: 1px solid #444;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 6px #ff00aa;
+    }
+    .portfolio-project img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #00ffd9;
+      border-radius: 8px;
+      margin: 0.5rem 0;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .portfolio-project img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 12px #00ffd9;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aura Reina | Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m <strong>Aura Reina</strong>, an illustrator and animator passionate about storytelling through images, currently based in London. My work is influenced by video games, anime, and fashion, blending vibrant aesthetics with narrative depth.</p>
+  </section>
+
+  <section id="portfolio">
+    <div class="portfolio-project">
+      <h2>Arcangel</h2>
+      <img src="images/Arcangel1.png" alt="Arcangel Concept 1">
+      <img src="images/Arcangel2.png" alt="Arcangel Concept 2">
+    </div>
+
+    <div class="portfolio-project">
+      <h2>Memory Unlock</h2>
+      <img src="images/MU1.png">
+      <img src="images/Face.png">
+      <img src="images/MU5.png">
+      <img src="images/explosion.png">
+      <img src="images/orb.png">
+      <img src="images/MU12.png">
+    </div>
+
+    <div class="portfolio-project">
+      <h2>Fairy Tale Kind Of</h2>
+      <img src="images/Ft1.png">
+      <img src="images/Ft2.png">
+      <img src="images/Ft3.png">
+      <img src="images/Ft4.png">
+      <img src="images/Ft5.png">
+    </div>
+
+    <div class="portfolio-project">
+      <h2>Artist Room</h2>
+      <img src="images/Artist_Room.png">
+    </div>
+
+    <div class="portfolio-project">
+      <h2>Max</h2>
+      <img src="images/Max1.png">
+    </div>
+
+    <div class="portfolio-project">
+      <h2>Reina Jacket</h2>
+      <img src="images/Chaqueta1.png">
+      <img src="images/Chaqueta2.png">
+      <img src="images/Chaqueta3.png">
+    </div>
+
+    <div class="portfolio-project">
+      <h2>Cats and Litters: The Great Cat-astrophe</h2>
+      <img src="images/Card0.png">
+      <img src="images/Card9.png">
+      <img src="images/Card1.png">
+      <img src="images/Card2.png">
+      <img src="images/Card3.png">
+      <img src="images/Card4.png">
+      <img src="images/Card5.png">
+      <img src="images/Card6.png">
+      <img src="images/Card7.png">
+      <img src="images/Card8.png">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me via:</p>
+    <p>Email: <a href="mailto:hail_reira@hotmail.com">hail_reira@hotmail.com</a><br>
+       Instagram: <a href="https://instagram.com/hail_reira" target="_blank">@HAIL_REIRA</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Aura Reina. All rights reserved.
+  </footer>
+</body>
+</html>
